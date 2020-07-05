@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+header nav{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	margin-right: -15px;
+}
+
+a{
+	text-decoration: none;
+	opacity: 0.75;
+}
+
+a:hover{
+	opacity: 1;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 100px 0;
+	opacity: 0;
+	animation: 1s fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn{
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+header h2 {
+	font-family: "Quicksand", sans-serif;
+}
+
+header nav li{
+	margin: 0 15px;
+}
